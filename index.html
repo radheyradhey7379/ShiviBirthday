@@ -16,7 +16,7 @@
             min-height: 100vh;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #f8e1f4 60%, #d16ba5 100%);
+            background: transparent;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -115,7 +115,7 @@
 </head>
 <body>
     <audio class="music-player" id="music" src="Untitled video - Made with Clipchamp.mp3" loop></audio>
-    <video class="bg-wallpaper" src="0_Couple_Love_3840x2160.mp4" autoplay muted loop "></video>
+    <video class="bg-wallpaper" src="0_Couple_Love_3840x2160.mp4" autoplay muted loop playsinline style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;opacity:0.7;"></video>
     <div id="blur-overlay" class="blur-overlay">
         <div class="ribbon-container">
             <div class="ribbon" id="ribbon">🎀 Tap to Enter 🎀</div>
@@ -143,5 +143,3 @@
     </script>
 </body>
 </html>
-
-
